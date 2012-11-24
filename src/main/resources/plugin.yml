@@ -1,0 +1,38 @@
+name: InTime
+main: me.eccentric_nz.plugins.intime.InTime
+author: Schwarzer Zylinder
+version: 1.1
+soft-depend: [Vault]
+commands:
+    intime:
+        description: Check the own or other player's time
+        usage: /intime [player]
+        help:
+            description: Show help
+            usage: /intime help
+        helpadmin:
+            desciption: Show admin commands
+            usage: /intime helpadmin
+        saveconfig:
+            description: Save the config to the file
+            usage: /intime saveconfig
+        reloadcofnig:
+            desciption: Reload the config from the file
+            usage: /intime reloadconfig
+permissions:
+    intime:
+        description: Gives access to all InTime commands.
+        children:
+            intime.user: true
+            intime.admin: false
+            intime.createsigns: true
+    intime.user:
+        description: Standard user permissions.
+        children:
+            intime.user.checktimeown: true
+            intime.user.checktimeother: true
+    intime.admin:
+        description: Grants access to administrative rights
+        children:
+            intime.admin.helpadmin: true
+            intime.admin.accessconfig: true
