@@ -121,7 +121,6 @@ public class InTimePlayerListener implements Listener {
         if (!(sender instanceof Player)) {
             return true;
         }
-
         if (plugin.config().isPermissions()) {
             if (sender.hasPermission("intime." + permission)) {
                 return true;
@@ -132,7 +131,6 @@ public class InTimePlayerListener implements Listener {
                 return false;
             }
         }
-
         return true;
     }
 
