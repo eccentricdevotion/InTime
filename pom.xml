@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>me.eccentric_nz.plugins.intime</groupId>
     <artifactId>InTime</artifactId>
-    <version>1.1</version>
+    <version>1.1.5</version>
     <name>InTime</name>
     <url>http://dev.bukkit.org/server-mods/intime/</url>
     <repositories>
@@ -32,14 +32,14 @@
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.4.5-R0.3-SNAPSHOT</version>
+            <version>1.5-R0.1-SNAPSHOT</version>
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>ci.herocraftonline.com</groupId>
             <artifactId>vault</artifactId>
-            <version>1.2.20</version>
+            <version>1.2.24</version>
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
